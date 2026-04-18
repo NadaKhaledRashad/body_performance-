@@ -161,17 +161,17 @@ After cleaning:
 
 ---
 
-## 🙌 Team  
-- Nada Khaled Mahmoud  
-- Neama Eid Darwish  
-- Fatima Youssef Kamal  
-- Mona Yasser Abdelkader  
-- Hagar Roshdy Ramadan  
-- Nourhan Abdelkhaleq Abdelkhaleq  
+## 🤝 Connect With Me
+Feel free to connect or reach out for feedback!
+<p align="center">
+  <a href="mailto:nadakhaledmahmoud412@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
 
----
+  <a href="https://www.linkedin.com/in/nada-khaled-rashad/">
+    <img src="https://img.shields.io/badge/LinkedIn-Lets_Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
 
-## ⭐ If you like this project  
-Give it a ⭐ on GitHub!
 
 ---
