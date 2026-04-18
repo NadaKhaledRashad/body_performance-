@@ -1,93 +1,177 @@
-# 🏥 Hospital Management System (Data Mining Project)
+# 🏋️ Body Performance Analytics & Intelligent Classification System  
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)  
+![ML](https://img.shields.io/badge/Machine%20Learning-Project-green)  
+![Status](https://img.shields.io/badge/Status-Completed-success)  
 
 ---
 
-## 📌 Overview
-This project is a **Hospital Management System** built as part of a Data Mining project.  
-The main goal is to organize and analyze healthcare data to improve hospital operations, support decision-making, and extract meaningful insights.
+## 📑 Table of Contents  
+- [📌 Overview](#-overview)  
+- [🎯 Objectives](#-objectives)  
+- [📊 Dataset](#-dataset-description)  
+- [🧹 Data Preprocessing](#-data-preprocessing)  
+- [📈 EDA](#-exploratory-data-analysis-eda)  
+- [🤖 Models](#-machine-learning-models-used)  
+- [🏆 Performance](#-model-performance)  
+- [📉 Regression](#-regression-results)  
+- [⚙️ Technologies](#️-technologies--tools)  
+- [🔄 Pipeline](#-project-pipeline)  
+- [🚀 Applications](#-applications)  
 
 ---
 
-## 🎯 Objectives
-- Centralize hospital data in a structured system  
-- Improve communication between patients and doctors  
-- Manage appointments efficiently  
-- Analyze data to generate insights for better healthcare decisions  
+## 📌 Overview  
+This project focuses on analyzing physical fitness data and building intelligent machine learning models to evaluate human body performance.  
+
+The system aims to:  
+- Classify individuals into fitness levels (A, B, C, D)  
+- Predict physical performance using regression models  
+
+This project was developed as part of the **Introduction to AI & Machine Learning** course.  
 
 ---
 
-## 🗂️ Database Design
-We designed a complete database system using an **ER Diagram** that includes the following entities:
+## 🎯 Objectives  
+- Build a classification system to predict fitness level:  
+  - A (Excellent)  
+  - B (Good)  
+  - C (Average)  
+  - D (Poor)  
 
-- Patients  
-- Doctors  
-- Departments  
-- Appointments  
-- Treatments  
-- Bills  
+- Build a regression model to predict:  
+  - `broad_jump_cm` (indicator of explosive power)  
 
----
-
-## 🔗 Key Relationships
-- One doctor → many appointments  
-- One patient → many appointments  
-- One appointment → many treatments  
-- One patient → many bills  
+- Compare multiple machine learning models and evaluate their performance  
 
 ---
 
-## 🛠️ Technologies Used
-- SQL → Data querying & analysis  
-- Python → Data cleaning & EDA  
-- Power BI → Data visualization & dashboard  
-- Data Modeling → Star Schema  
-- DAX → Measures and KPIs  
+## 📊 Dataset Description  
+The dataset contains body measurements and fitness indicators, including:  
+
+- Age, Gender  
+- Height & Weight  
+- Body Fat %  
+- Blood Pressure (Systolic & Diastolic)  
+- Grip Strength  
+- Flexibility  
+- Sit-ups Count  
+- Broad Jump Distance  
+
+After cleaning:  
+
+- ✅ 13,371 records  
+- ✅ Balanced classes (~25% each)  
 
 ---
 
-## 🧹 Data Cleaning & Preprocessing
-We performed several steps to prepare the dataset:
-
-- Handling missing values  
-- Fixing incorrect data types  
-- Removing duplicates  
-- Handling outliers  
-- Validating data quality  
+## 🧹 Data Preprocessing  
+- Removed duplicates  
+- Removed biologically impossible values (e.g., zero blood pressure)  
+- Handled hidden invalid data  
+- Ensured high data integrity  
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
-We analyzed the dataset to understand patterns and relationships:
+## 📈 Exploratory Data Analysis (EDA)  
 
-- Distribution of numerical features  
-- Outlier detection  
-- Correlation analysis  
-- Category relationships  
-
----
-
-## 📈 Key Insights
-- Strong relationship between patient stay duration and number of visitors  
-- Trauma is the most common admission type  
-- Admission deposit has minimal impact on predictions  
-- No strong multicollinearity between features  
+### 🔍 Key Insights  
+- 📉 Performance decreases with age  
+- 💪 Strong positive correlation:  
+  - Grip Strength ↔ Broad Jump  
+  - Sit-ups ↔ Broad Jump  
+- ⚠️ Body fat negatively impacts performance  
+- 🚫 Blood pressure has negligible effect  
+- 👥 Gender is a strong predictor  
 
 ---
 
-## 📊 Dashboard
-We built an interactive **Power BI Dashboard** that includes:
+## 🤖 Machine Learning Models Used  
 
-- KPI Cards  
-- Interactive charts  
-- Filters (Department, Severity, Admission Type, Age)  
-- Clear data storytelling  
+### 🔹 Classification Models  
+- K-Nearest Neighbors (KNN)  
+- Decision Tree  
+- Random Forest  
+- Support Vector Machine (SVM)  
+- Neural Network (MLP)  
+
+### 🔹 Regression Model  
+- Linear Regression (OLS)  
 
 ---
 
-## 🧠 What We Learned
-- How to handle real-world messy data  
-- Importance of data cleaning before analysis  
-- Building end-to-end data projects  
-- Connecting technical work with business insights  
+## 🏆 Model Performance  
+
+| Model | Accuracy |
+|------|--------|
+| Neural Network | **74.23% (Best)** |
+| Random Forest | 72% |
+| SVM | 71.7% |
+| Decision Tree | 68% |
+| KNN | 62.7% |
+
+📌 **Best Model:** Neural Network  
+
+---
+
+## 📉 Regression Results  
+
+- **Target:** `broad_jump_cm`  
+- **R² Score:** ~ 0.79  
+- **RMSE:** ~ 18 cm  
+
+### 🔑 Key Influencing Features  
+
+**Positive Impact:**  
+- Sit-ups  
+- Grip strength  
+- Gender  
+
+**Negative Impact:**  
+- Age  
+- Body fat  
+
+---
+
+## ⚙️ Technologies & Tools  
+- Python 🐍  
+- Pandas & NumPy  
+- Matplotlib & Seaborn  
+- Scikit-learn  
+- TensorFlow / Keras  
+- Google Colab  
+
+---
+
+## 🔄 Project Pipeline  
+- Data Cleaning  
+- Data Exploration  
+- Feature Engineering  
+- Model Training  
+- Model Evaluation  
+- Comparison & Insights  
+
+---
+
+## 🚀 Applications  
+- Fitness assessment systems  
+- Sports science analysis  
+- Health monitoring tools  
+- Personalized training recommendations  
+
+---
+
+## 🙌 Team  
+- Nada Khaled Mahmoud  
+- Neama Eid Darwish  
+- Fatima Youssef Kamal  
+- Mona Yasser Abdelkader  
+- Hagar Roshdy Ramadan  
+- Nourhan Abdelkhaleq Abdelkhaleq  
+
+---
+
+## ⭐ If you like this project  
+Give it a ⭐ on GitHub!
 
 ---
