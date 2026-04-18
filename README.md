@@ -1,120 +1,93 @@
-🏋️ Body Performance Analytics & Intelligent Classification System
+# 🏥 Hospital Management System (Data Mining Project)
 
+---
 
+## 📌 Overview
+This project is a **Hospital Management System** built as part of a Data Mining project.  
+The main goal is to organize and analyze healthcare data to improve hospital operations, support decision-making, and extract meaningful insights.
 
+---
 
+## 🎯 Objectives
+- Centralize hospital data in a structured system  
+- Improve communication between patients and doctors  
+- Manage appointments efficiently  
+- Analyze data to generate insights for better healthcare decisions  
 
+---
 
-📑 Table of Contents
-📌 Overview
-🎯 Objectives
-🗂️ Dataset
-🔗 Tasks
-🛠️ Technologies
-🧹 Data Cleaning
-📊 EDA
-📈 Key Insights
-🤖 Models
-🏆 Best Model
-📉 Regression
-📊 Evaluation
-🧠 Learnings
-🚀 Conclusion
-🙌 Team
-📌 Overview
+## 🗂️ Database Design
+We designed a complete database system using an **ER Diagram** that includes the following entities:
 
-This project analyzes body performance data using Machine Learning techniques to classify fitness levels and predict athletic performance.
+- Patients  
+- Doctors  
+- Departments  
+- Appointments  
+- Treatments  
+- Bills  
 
-It supports applications in:
+---
 
-Fitness assessment
-Sports analytics
-Health monitoring
-🎯 Objectives
-Classify performance levels (A, B, C, D)
-Predict broad jump using regression
-Analyze relationships between body metrics
-Extract meaningful insights from data
-🗂️ Dataset
+## 🔗 Key Relationships
+- One doctor → many appointments  
+- One patient → many appointments  
+- One appointment → many treatments  
+- One patient → many bills  
 
-The dataset includes:
+---
 
-Age, Gender
-Height, Weight
-Body Fat %
-Blood Pressure
-Grip Strength
-Flexibility
-Sit-ups Count
-Broad Jump
-Performance Class
-🔗 Tasks
-🧠 Classification → Predict performance class
-📉 Regression → Predict broad_jump_cm
-🛠️ Technologies
-Python
-Pandas & NumPy
-Matplotlib & Seaborn
-Scikit-learn
-🧹 Data Cleaning
-Removed duplicates
-Fixed invalid values
-Removed impossible measurements
-Handled hidden missing values
+## 🛠️ Technologies Used
+- SQL → Data querying & analysis  
+- Python → Data cleaning & EDA  
+- Power BI → Data visualization & dashboard  
+- Data Modeling → Star Schema  
+- DAX → Measures and KPIs  
 
-✅ Final dataset: 13,371 rows
+---
 
-📊 EDA
-Distribution analysis
-Correlation heatmap
-Boxplots
-Gender & age analysis
-Performance trends
-📈 Key Insights
-💪 Strong link: Grip strength ↔ Broad jump
-📉 Body fat negatively affects performance
-📊 Performance decreases with age
-🚹 Gender is a strong predictor
-❌ Blood pressure has no significant impact
-🤖 Models
-Model	Accuracy
-KNN	62%
-Decision Tree	68%
-Random Forest	72%
-SVM	71.7%
-Neural Network	74.23%
-🏆 Best Model
+## 🧹 Data Cleaning & Preprocessing
+We performed several steps to prepare the dataset:
 
-👉 Neural Network (MLP) achieved the best performance
+- Handling missing values  
+- Fixing incorrect data types  
+- Removing duplicates  
+- Handling outliers  
+- Validating data quality  
 
-📉 Regression
+---
 
-Model: Linear Regression
+## 📊 Exploratory Data Analysis (EDA)
+We analyzed the dataset to understand patterns and relationships:
 
-R² Score ≈ 0.79
-RMSE ≈ 18
-📊 Evaluation
-Train/Test splits
-Cross-validation
-Accuracy, Precision, Recall, F1
-RMSE & R²
-🧠 Learnings
-Data cleaning is critical
-Feature relationships matter
-Model tuning improves performance
-Real-world data is complex
-🚀 Conclusion
+- Distribution of numerical features  
+- Outlier detection  
+- Correlation analysis  
+- Category relationships  
 
-Machine Learning can effectively:
+---
 
-Classify fitness levels
-Predict athletic performance
-Support health & sports decisions
-🙌 Team
-Nada Khaled Mahmoud
-Neama Eid Darwish
-Fatima Youssef Kamal
-Mona Yasser Abdelkader
-Hagar Roshdy Ramadan
-Nourhan Abdelkhaleq Abdelkhaleq
-⭐ Don't forget
+## 📈 Key Insights
+- Strong relationship between patient stay duration and number of visitors  
+- Trauma is the most common admission type  
+- Admission deposit has minimal impact on predictions  
+- No strong multicollinearity between features  
+
+---
+
+## 📊 Dashboard
+We built an interactive **Power BI Dashboard** that includes:
+
+- KPI Cards  
+- Interactive charts  
+- Filters (Department, Severity, Admission Type, Age)  
+- Clear data storytelling  
+
+---
+
+## 🧠 What We Learned
+- How to handle real-world messy data  
+- Importance of data cleaning before analysis  
+- Building end-to-end data projects  
+- Connecting technical work with business insights  
+
+---
