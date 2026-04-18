@@ -27,9 +27,6 @@ This project focuses on analyzing physical fitness data and building intelligent
 The system aims to:  
 - Classify individuals into fitness levels (A, B, C, D)  
 - Predict physical performance using regression models  
-
-This project was developed as part of the **Introduction to AI & Machine Learning** course.  
-
 ---
 
 ## 🎯 Objectives  
