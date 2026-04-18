@@ -1,4 +1,4 @@
-# body_performance-
+#body_performance
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +49,6 @@
     font-size: 15px;
   }
 
-  /* ── HERO ── */
   .hero {
     background: var(--navy);
     color: white;
@@ -102,22 +101,11 @@
     max-width: 560px;
     margin-bottom: 32px;
   }
-  .hero-meta {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .hero-meta-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    color: #94a3b8;
-  }
+  .hero-meta { display: flex; gap: 24px; flex-wrap: wrap; }
+  .hero-meta-item { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #94a3b8; }
   .hero-meta-item strong { color: #e2e8f0; }
   .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blue-accent); flex-shrink: 0; }
 
-  /* ── STATS RIBBON ── */
   .stats-ribbon {
     background: white;
     border-bottom: 1px solid var(--gray-200);
@@ -134,124 +122,42 @@
     flex-shrink: 0;
   }
   .stat-cell:last-child { border-right: none; }
-  .stat-num {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--navy);
-    display: block;
-    line-height: 1;
-    margin-bottom: 4px;
-  }
+  .stat-num { font-size: 24px; font-weight: 700; color: var(--navy); display: block; line-height: 1; margin-bottom: 4px; }
   .stat-label { font-size: 12px; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.07em; }
 
-  /* ── LAYOUT ── */
   .container { max-width: 1100px; margin: 0 auto; padding: 48px 40px; }
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 
-  /* ── SECTION ── */
   .section { margin-bottom: 56px; }
-  .section-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--blue-accent);
-    margin-bottom: 8px;
-  }
-  .section-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--gray-900);
-    margin-bottom: 24px;
-  }
+  .section-label { font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--blue-accent); margin-bottom: 8px; }
+  .section-title { font-size: 22px; font-weight: 700; color: var(--gray-900); margin-bottom: 24px; }
 
-  /* ── CARD ── */
-  .card {
-    background: white;
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius);
-    padding: 24px;
-    box-shadow: var(--shadow);
-  }
+  .card { background: white; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
   .card-sm { padding: 16px 20px; }
 
-  /* ── PIPELINE ── */
   .pipeline { display: flex; align-items: center; gap: 0; overflow-x: auto; padding: 8px 0; }
-  .pipe-step {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    flex-shrink: 0;
-  }
-  .pipe-box {
-    background: white;
-    border: 1.5px solid var(--gray-200);
-    border-radius: var(--radius-sm);
-    padding: 14px 20px;
-    text-align: center;
-    box-shadow: var(--shadow);
-  }
+  .pipe-step { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
+  .pipe-box { background: white; border: 1.5px solid var(--gray-200); border-radius: var(--radius-sm); padding: 14px 20px; text-align: center; box-shadow: var(--shadow); }
   .pipe-icon { font-size: 22px; margin-bottom: 6px; }
   .pipe-name { font-size: 12px; font-weight: 600; color: var(--gray-800); white-space: nowrap; }
-  .pipe-arrow {
-    width: 36px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--blue-accent), var(--teal));
-    position: relative;
-    flex-shrink: 0;
-  }
-  .pipe-arrow::after {
-    content: '';
-    position: absolute;
-    right: -1px; top: -4px;
-    border: 5px solid transparent;
-    border-left: 7px solid var(--teal);
-  }
+  .pipe-arrow { width: 36px; height: 2px; background: linear-gradient(90deg, var(--blue-accent), var(--teal)); position: relative; flex-shrink: 0; }
+  .pipe-arrow::after { content: ''; position: absolute; right: -1px; top: -4px; border: 5px solid transparent; border-left: 7px solid var(--teal); }
 
-  /* ── FEATURE TABLE ── */
   .feat-table { width: 100%; border-collapse: collapse; }
-  .feat-table th {
-    text-align: left;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--gray-400);
-    padding: 8px 12px;
-    border-bottom: 1.5px solid var(--gray-200);
-  }
-  .feat-table td {
-    padding: 11px 12px;
-    font-size: 14px;
-    border-bottom: 1px solid var(--gray-100);
-    vertical-align: middle;
-  }
+  .feat-table th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-400); padding: 8px 12px; border-bottom: 1.5px solid var(--gray-200); }
+  .feat-table td { padding: 11px 12px; font-size: 14px; border-bottom: 1px solid var(--gray-100); vertical-align: middle; }
   .feat-table tr:last-child td { border-bottom: none; }
   .feat-table tr:hover td { background: var(--gray-50); }
   .feat-name { font-family: var(--mono); font-size: 13px; color: var(--blue-accent); font-weight: 500; }
-  .badge {
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 100px;
-    font-size: 11px;
-    font-weight: 600;
-  }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 600; }
   .badge-blue { background: var(--blue-light); color: #1d4ed8; }
   .badge-amber { background: var(--amber-light); color: #92400e; }
   .badge-teal { background: var(--teal-light); color: #115e59; }
-  .badge-purple { background: var(--purple-light); color: #5b21b6; }
 
-  /* ── CLEANING CARDS ── */
   .clean-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  .clean-card {
-    background: white;
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius-sm);
-    padding: 14px;
-    border-top: 3px solid var(--blue-accent);
-  }
+  .clean-card { background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); padding: 14px; border-top: 3px solid var(--blue-accent); }
   .clean-card.warn { border-top-color: var(--amber); }
   .clean-card.danger { border-top-color: var(--red); }
   .clean-card.success { border-top-color: var(--green); }
@@ -259,23 +165,8 @@
   .clean-issue { font-size: 12px; font-weight: 600; color: var(--gray-700); margin-bottom: 2px; }
   .clean-desc { font-size: 11px; color: var(--gray-400); }
 
-  /* ── EDA INSIGHTS ── */
-  .insight-card {
-    background: white;
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius);
-    padding: 20px;
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-  }
-  .insight-icon {
-    width: 40px; height: 40px;
-    border-radius: var(--radius-sm);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-  }
+  .insight-card { background: white; border: 1px solid var(--gray-200); border-radius: var(--radius); padding: 20px; display: flex; gap: 16px; align-items: flex-start; }
+  .insight-icon { width: 40px; height: 40px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
   .insight-icon.blue { background: var(--blue-light); }
   .insight-icon.teal { background: var(--teal-light); }
   .insight-icon.amber { background: var(--amber-light); }
@@ -285,30 +176,19 @@
   .insight-title { font-size: 13px; font-weight: 600; color: var(--gray-900); margin-bottom: 4px; }
   .insight-body { font-size: 13px; color: var(--gray-600); line-height: 1.5; }
 
-  /* ── CORRELATION BARS ── */
   .corr-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
   .corr-item { display: flex; align-items: center; gap: 10px; }
   .corr-label { font-size: 12px; font-family: var(--mono); color: var(--gray-600); width: 220px; flex-shrink: 0; }
   .corr-bar-wrap { flex: 1; background: var(--gray-100); border-radius: 4px; height: 8px; overflow: hidden; }
-  .corr-bar { height: 100%; border-radius: 4px; transition: width 0.6s ease; }
+  .corr-bar { height: 100%; border-radius: 4px; }
   .corr-bar.pos { background: var(--teal); }
   .corr-bar.neg { background: var(--red); }
   .corr-val { font-size: 12px; font-weight: 600; width: 44px; text-align: right; flex-shrink: 0; }
   .corr-val.pos { color: var(--teal); }
   .corr-val.neg { color: var(--red); }
 
-  /* ── MODEL RESULTS TABLE ── */
   .model-table { width: 100%; border-collapse: collapse; }
-  .model-table th {
-    text-align: left;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--gray-400);
-    padding: 10px 14px;
-    border-bottom: 2px solid var(--gray-200);
-  }
+  .model-table th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-400); padding: 10px 14px; border-bottom: 2px solid var(--gray-200); }
   .model-table td { padding: 12px 14px; font-size: 14px; border-bottom: 1px solid var(--gray-100); vertical-align: middle; }
   .model-table tr:hover td { background: var(--gray-50); }
   .model-table tr.best-row td { background: #f0fdf9; }
@@ -316,26 +196,13 @@
   .acc-bar-wrap { display: flex; align-items: center; gap: 8px; }
   .acc-bar { height: 6px; border-radius: 3px; background: var(--blue-accent); }
   .acc-val { font-size: 13px; font-weight: 600; color: var(--gray-800); }
-  .best-tag {
-    display: inline-block;
-    background: var(--teal-light);
-    color: #0f766e;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    padding: 2px 8px;
-    border-radius: 100px;
-    margin-left: 6px;
-  }
+  .best-tag { display: inline-block; background: var(--teal-light); color: #0f766e; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 100px; margin-left: 6px; }
 
-  /* ── REGRESSION TABLE ── */
   .reg-table { width: 100%; border-collapse: collapse; }
   .reg-table th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gray-400); padding: 8px 12px; border-bottom: 1.5px solid var(--gray-200); }
   .reg-table td { padding: 10px 12px; font-size: 13px; border-bottom: 1px solid var(--gray-100); }
   .r2-pill { display: inline-block; background: var(--green-light); color: #15803d; font-weight: 600; font-size: 12px; padding: 2px 8px; border-radius: 100px; }
 
-  /* ── COEFF TABLE ── */
   .coeff-item { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid var(--gray-100); }
   .coeff-item:last-child { border-bottom: none; }
   .coeff-feat { font-family: var(--mono); font-size: 12px; color: var(--gray-700); width: 160px; flex-shrink: 0; }
@@ -347,91 +214,30 @@
   .coeff-val.pos { color: var(--teal); }
   .coeff-val.neg { color: var(--red); }
 
-  /* ── TEAM ── */
   .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-  .team-card {
-    background: white;
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius-sm);
-    padding: 16px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .team-avatar {
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 13px;
-    font-weight: 700;
-    flex-shrink: 0;
-    color: white;
-  }
-  .av1 { background: #2563eb; }
-  .av2 { background: #0d9488; }
-  .av3 { background: #7c3aed; }
-  .av4 { background: #d97706; }
-  .av5 { background: #dc2626; }
-  .av6 { background: #16a34a; }
+  .team-card { background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); padding: 16px; display: flex; align-items: center; gap: 12px; }
+  .team-avatar { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; color: white; }
+  .av1 { background: #2563eb; } .av2 { background: #0d9488; } .av3 { background: #7c3aed; }
+  .av4 { background: #d97706; } .av5 { background: #dc2626; } .av6 { background: #16a34a; }
   .team-name { font-size: 13px; font-weight: 600; color: var(--gray-800); }
   .team-role { font-size: 11px; color: var(--gray-400); }
 
-  /* ── TECH STACK ── */
   .tech-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  .tech-item {
-    background: white;
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius-sm);
-    padding: 14px 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+  .tech-item { background: white; border: 1px solid var(--gray-200); border-radius: var(--radius-sm); padding: 14px 16px; display: flex; align-items: center; gap: 10px; }
   .tech-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
   .tech-name { font-size: 13px; font-weight: 600; color: var(--gray-800); }
   .tech-use { font-size: 11px; color: var(--gray-400); }
 
-  /* ── CODE BLOCK ── */
-  .code-block {
-    background: var(--gray-900);
-    color: #e2e8f0;
-    border-radius: var(--radius-sm);
-    padding: 20px 24px;
-    font-family: var(--mono);
-    font-size: 13px;
-    line-height: 1.7;
-    overflow-x: auto;
-  }
+  .code-block { background: var(--gray-900); color: #e2e8f0; border-radius: var(--radius-sm); padding: 20px 24px; font-family: var(--mono); font-size: 13px; line-height: 1.7; overflow-x: auto; }
   .code-block .cmd { color: #60a5fa; }
   .code-block .comment { color: #64748b; }
   .code-block .str { color: #34d399; }
 
-  /* ── FOOTER ── */
-  .footer {
-    background: var(--navy);
-    color: #64748b;
-    text-align: center;
-    padding: 32px 40px;
-    font-size: 13px;
-  }
+  .footer { background: var(--navy); color: #64748b; text-align: center; padding: 32px 40px; font-size: 13px; }
   .footer strong { color: #94a3b8; }
 
-  /* ── TABS ── */
   .tab-bar { display: flex; gap: 4px; border-bottom: 1.5px solid var(--gray-200); margin-bottom: 24px; }
-  .tab-btn {
-    padding: 8px 18px;
-    font-size: 13px;
-    font-weight: 500;
-    color: var(--gray-400);
-    border: none;
-    background: none;
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1.5px;
-    font-family: var(--font);
-    border-radius: 0;
-    transition: color 0.15s;
-  }
+  .tab-btn { padding: 8px 18px; font-size: 13px; font-weight: 500; color: var(--gray-400); border: none; background: none; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1.5px; font-family: var(--font); transition: color 0.15s; }
   .tab-btn.active { color: var(--blue-accent); border-bottom-color: var(--blue-accent); }
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
@@ -446,11 +252,8 @@
 </head>
 <body>
 
-<!-- HERO -->
 <header class="hero">
-  <div class="hero-badge">
-    <span class="dot"></span> ML · Classification · Regression
-  </div>
+  <div class="hero-badge"><span class="dot"></span> ML · Classification · Regression</div>
   <h1>Body Performance <span>Analytics</span> &amp; Intelligent Classification System</h1>
   <p>Machine Learning for Physical Fitness Assessment — predicting performance classes and explosive power from body measurements.</p>
   <div class="hero-meta">
@@ -461,7 +264,6 @@
   </div>
 </header>
 
-<!-- STATS RIBBON -->
 <div class="stats-ribbon">
   <div class="stat-cell"><span class="stat-num">13,371</span><span class="stat-label">Clean Records</span></div>
   <div class="stat-cell"><span class="stat-num">11</span><span class="stat-label">Input Features</span></div>
@@ -473,7 +275,6 @@
 
 <div class="container">
 
-  <!-- OVERVIEW -->
   <section class="section">
     <div class="section-label">Overview</div>
     <div class="section-title">Project Goals</div>
@@ -481,7 +282,7 @@
       <div class="card" style="border-left: 4px solid var(--blue-accent);">
         <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--blue-accent);margin-bottom:10px;">Task 1 — Classification</div>
         <div style="font-size:17px;font-weight:700;color:var(--gray-900);margin-bottom:8px;">Predict Performance Class</div>
-        <p style="color:var(--gray-600);font-size:14px;">Classify individuals into one of four performance levels — <strong>A (Excellent)</strong>, <strong>B (Good)</strong>, <strong>C (Average)</strong>, or <strong>D (Poor)</strong> — based on their physical measurements.</p>
+        <p style="color:var(--gray-600);font-size:14px;">Classify individuals into one of four levels — <strong>A (Excellent)</strong>, <strong>B (Good)</strong>, <strong>C (Average)</strong>, or <strong>D (Poor)</strong> — based on physical measurements.</p>
       </div>
       <div class="card" style="border-left: 4px solid var(--teal);">
         <div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--teal);margin-bottom:10px;">Task 2 — Regression</div>
@@ -491,70 +292,33 @@
     </div>
   </section>
 
-  <!-- PIPELINE -->
   <section class="section">
     <div class="section-label">Methodology</div>
     <div class="section-title">Project Pipeline</div>
     <div class="card" style="padding: 32px;">
       <div class="pipeline">
-        <div class="pipe-step">
-          <div class="pipe-box">
-            <div class="pipe-icon">🗃️</div>
-            <div class="pipe-name">Raw Data</div>
-          </div>
-        </div>
+        <div class="pipe-step"><div class="pipe-box"><div class="pipe-icon">🗃️</div><div class="pipe-name">Raw Data</div></div></div>
         <div class="pipe-arrow"></div>
-        <div class="pipe-step">
-          <div class="pipe-box">
-            <div class="pipe-icon">🧹</div>
-            <div class="pipe-name">Data Cleaning</div>
-          </div>
-        </div>
+        <div class="pipe-step"><div class="pipe-box"><div class="pipe-icon">🧹</div><div class="pipe-name">Data Cleaning</div></div></div>
         <div class="pipe-arrow"></div>
-        <div class="pipe-step">
-          <div class="pipe-box">
-            <div class="pipe-icon">🔬</div>
-            <div class="pipe-name">EDA</div>
-          </div>
-        </div>
+        <div class="pipe-step"><div class="pipe-box"><div class="pipe-icon">🔬</div><div class="pipe-name">EDA</div></div></div>
         <div class="pipe-arrow"></div>
-        <div class="pipe-step">
-          <div class="pipe-box">
-            <div class="pipe-icon">⚙️</div>
-            <div class="pipe-name">Feature Engineering</div>
-          </div>
-        </div>
+        <div class="pipe-step"><div class="pipe-box"><div class="pipe-icon">⚙️</div><div class="pipe-name">Feature Engineering</div></div></div>
         <div class="pipe-arrow"></div>
-        <div class="pipe-step">
-          <div class="pipe-box">
-            <div class="pipe-icon">🤖</div>
-            <div class="pipe-name">Model Training</div>
-          </div>
-        </div>
+        <div class="pipe-step"><div class="pipe-box"><div class="pipe-icon">🤖</div><div class="pipe-name">Model Training</div></div></div>
         <div class="pipe-arrow"></div>
-        <div class="pipe-step">
-          <div class="pipe-box">
-            <div class="pipe-icon">📊</div>
-            <div class="pipe-name">Evaluation</div>
-          </div>
-        </div>
+        <div class="pipe-step"><div class="pipe-box"><div class="pipe-icon">📊</div><div class="pipe-name">Evaluation</div></div></div>
       </div>
     </div>
   </section>
 
-  <!-- DATASET -->
   <section class="section">
     <div class="section-label">Dataset</div>
     <div class="section-title">Features &amp; Variables</div>
     <div class="card" style="padding: 0; overflow: hidden;">
       <table class="feat-table">
         <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Description</th>
-            <th>Type</th>
-            <th>Role</th>
-          </tr>
+          <tr><th>Feature</th><th>Description</th><th>Type</th><th>Role</th></tr>
         </thead>
         <tbody>
           <tr><td class="feat-name">age</td><td>Age in years</td><td><span class="badge badge-blue">Numeric</span></td><td>Input</td></tr>
@@ -574,7 +338,6 @@
     </div>
   </section>
 
-  <!-- DATA CLEANING -->
   <section class="section">
     <div class="section-label">Preprocessing</div>
     <div class="section-title">Data Cleaning Summary</div>
@@ -597,38 +360,17 @@
     </div>
   </section>
 
-  <!-- EDA INSIGHTS -->
   <section class="section">
     <div class="section-label">Exploratory Data Analysis</div>
     <div class="section-title">Key Findings</div>
     <div class="grid-2" style="gap:16px; margin-bottom:32px;">
-      <div class="insight-card">
-        <div class="insight-icon blue">⚧</div>
-        <div><div class="insight-title">Gender as Dominant Predictor</div><div class="insight-body">Males outperform females by 38–68% across all strength and power metrics, making gender the single strongest performance indicator.</div></div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-icon amber">📉</div>
-        <div><div class="insight-title">Age-Related Decline</div><div class="insight-body">Athletic performance shows a clear monotonic decline with age throughout the 21–64 range, affecting grip force, broad jump, and sit-ups.</div></div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-icon red">🩸</div>
-        <div><div class="insight-title">Body Fat: Strongest Negative Indicator</div><div class="insight-body">Body fat is the strongest negative predictor with inverse correlations of r = −0.61 to −0.68 with broad jump and sit-up performance.</div></div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-icon teal">⚖️</div>
-        <div><div class="insight-title">Perfectly Balanced Classes</div><div class="insight-body">Classes A, B, C, D each contain ~3,340 records (25% each), eliminating class-imbalance bias and making accuracy a fair metric.</div></div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-icon purple">💉</div>
-        <div><div class="insight-title">Blood Pressure: Negligible Correlation</div><div class="insight-body">Blood pressure shows |r| &lt; 0.06 with all fitness metrics — effectively independent from physical performance in this dataset.</div></div>
-      </div>
-      <div class="insight-card">
-        <div class="insight-icon green">🤸</div>
-        <div><div class="insight-title">Flexibility: Bimodal Distribution</div><div class="insight-body">Sit-and-bend scores show a bimodal pattern, including valid negative values that represent limited range of motion — retained intentionally.</div></div>
-      </div>
+      <div class="insight-card"><div class="insight-icon blue">⚧</div><div><div class="insight-title">Gender as Dominant Predictor</div><div class="insight-body">Males outperform females by 38–68% across all strength and power metrics, making gender the single strongest performance indicator.</div></div></div>
+      <div class="insight-card"><div class="insight-icon amber">📉</div><div><div class="insight-title">Age-Related Decline</div><div class="insight-body">Athletic performance shows a clear monotonic decline with age throughout the 21–64 range, affecting grip force, broad jump, and sit-ups.</div></div></div>
+      <div class="insight-card"><div class="insight-icon red">🩸</div><div><div class="insight-title">Body Fat: Strongest Negative Indicator</div><div class="insight-body">Body fat is the strongest negative predictor with inverse correlations of r = −0.61 to −0.68 with broad jump and sit-up performance.</div></div></div>
+      <div class="insight-card"><div class="insight-icon teal">⚖️</div><div><div class="insight-title">Perfectly Balanced Classes</div><div class="insight-body">Classes A, B, C, D each contain ~3,340 records (25% each), eliminating class-imbalance bias and making accuracy a fair metric.</div></div></div>
+      <div class="insight-card"><div class="insight-icon purple">💉</div><div><div class="insight-title">Blood Pressure: Negligible Correlation</div><div class="insight-body">Blood pressure shows |r| &lt; 0.06 with all fitness metrics — effectively independent from physical performance in this dataset.</div></div></div>
+      <div class="insight-card"><div class="insight-icon green">🤸</div><div><div class="insight-title">Flexibility: Bimodal Distribution</div><div class="insight-body">Sit-and-bend scores show a bimodal pattern including valid negative values representing limited range of motion — retained intentionally.</div></div></div>
     </div>
-
-    <!-- CORRELATIONS -->
     <div class="grid-2">
       <div class="card">
         <div style="font-size:13px;font-weight:600;color:var(--teal);margin-bottom:16px;">Strong Positive Correlations</div>
@@ -651,83 +393,63 @@
     </div>
   </section>
 
-  <!-- MODELS -->
   <section class="section">
     <div class="section-label">Results</div>
     <div class="section-title">Model Performance</div>
-
     <div class="tab-bar">
       <button class="tab-btn active" onclick="switchTab(event,'tab-clf')">Classification</button>
       <button class="tab-btn" onclick="switchTab(event,'tab-reg')">Regression</button>
       <button class="tab-btn" onclick="switchTab(event,'tab-coeff')">Feature Coefficients</button>
     </div>
 
-    <!-- CLASSIFICATION TAB -->
     <div class="tab-panel active" id="tab-clf">
       <div class="card" style="padding:0; overflow:hidden;">
         <table class="model-table">
-          <thead>
-            <tr>
-              <th>Model</th>
-              <th>Accuracy</th>
-              <th>Precision</th>
-              <th>Recall</th>
-              <th>F1</th>
-              <th>Best Config</th>
-            </tr>
-          </thead>
+          <thead><tr><th>Model</th><th>Accuracy</th><th>Precision</th><th>Recall</th><th>F1</th><th>Best Config</th></tr></thead>
           <tbody>
             <tr class="best-row">
               <td><strong>Neural Network (MLP)</strong><span class="best-tag">Best</span></td>
               <td><div class="acc-bar-wrap"><div class="acc-bar" style="width:74px;background:var(--teal)"></div><span class="acc-val" style="color:var(--teal)">74.23%</span></div></td>
-              <td>~0.75</td><td>~0.74</td><td>~0.74</td>
-              <td style="font-size:12px;color:var(--gray-400);">3-layer, ReLU, Dropout</td>
+              <td>~0.75</td><td>~0.74</td><td>~0.74</td><td style="font-size:12px;color:var(--gray-400);">3-layer, ReLU, Dropout</td>
             </tr>
             <tr>
               <td>Random Forest</td>
               <td><div class="acc-bar-wrap"><div class="acc-bar" style="width:72px"></div><span class="acc-val">72.00%</span></div></td>
-              <td>0.89</td><td>0.85</td><td>0.84</td>
-              <td style="font-size:12px;color:var(--gray-400);">100 trees, depth=10</td>
+              <td>0.89</td><td>0.85</td><td>0.84</td><td style="font-size:12px;color:var(--gray-400);">100 trees, depth=10</td>
             </tr>
             <tr>
               <td>SVM</td>
               <td><div class="acc-bar-wrap"><div class="acc-bar" style="width:71px"></div><span class="acc-val">71.71%</span></div></td>
-              <td>0.72</td><td>0.72</td><td>0.72</td>
-              <td style="font-size:12px;color:var(--gray-400);">RBF, C=10, γ=0.1</td>
+              <td>0.72</td><td>0.72</td><td>0.72</td><td style="font-size:12px;color:var(--gray-400);">RBF, C=10, γ=0.1</td>
             </tr>
             <tr>
               <td>Decision Tree (Pruned)</td>
               <td><div class="acc-bar-wrap"><div class="acc-bar" style="width:68px"></div><span class="acc-val">68.00%</span></div></td>
-              <td>0.86</td><td>0.81</td><td>0.80</td>
-              <td style="font-size:12px;color:var(--gray-400);">max_depth=10</td>
+              <td>0.86</td><td>0.81</td><td>0.80</td><td style="font-size:12px;color:var(--gray-400);">max_depth=10</td>
             </tr>
             <tr>
               <td>Decision Tree (Unpruned)</td>
               <td><div class="acc-bar-wrap"><div class="acc-bar" style="width:65px;background:var(--gray-300)"></div><span class="acc-val">64.56%</span></div></td>
-              <td>0.65</td><td>0.64</td><td>0.64</td>
-              <td style="font-size:12px;color:var(--gray-400);">No depth limit</td>
+              <td>0.65</td><td>0.64</td><td>0.64</td><td style="font-size:12px;color:var(--gray-400);">No depth limit</td>
             </tr>
             <tr>
               <td>KNN (k=30)</td>
               <td><div class="acc-bar-wrap"><div class="acc-bar" style="width:63px;background:var(--gray-300)"></div><span class="acc-val">62.77%</span></div></td>
-              <td>0.654</td><td>0.628</td><td>0.628</td>
-              <td style="font-size:12px;color:var(--gray-400);">k=30, Euclidean</td>
+              <td>0.654</td><td>0.628</td><td>0.628</td><td style="font-size:12px;color:var(--gray-400);">k=30, Euclidean</td>
             </tr>
             <tr>
               <td>KNN (k=5 — baseline)</td>
               <td><div class="acc-bar-wrap"><div class="acc-bar" style="width:59px;background:var(--gray-200)"></div><span class="acc-val" style="color:var(--gray-400)">58.99%</span></div></td>
-              <td>0.615</td><td>0.590</td><td>0.590</td>
-              <td style="font-size:12px;color:var(--gray-400);">Default k=5</td>
+              <td>0.615</td><td>0.590</td><td>0.590</td><td style="font-size:12px;color:var(--gray-400);">Default k=5</td>
             </tr>
           </tbody>
         </table>
       </div>
       <div class="card card-sm" style="margin-top:12px;background:var(--amber-light);border-color:#fcd34d;">
-        <span style="font-size:13px;color:#92400e;">⚠️ <strong>Note:</strong> The Neural Network result (74.23%) was affected by a preprocessing bug — it inadvertently trained on 304 unintended classes. Expected post-fix accuracy is <strong>70–75%</strong>, consistent with SVM performance.</span>
+        <span style="font-size:13px;color:#92400e;">⚠️ <strong>Note:</strong> The Neural Network result (74.23%) was affected by a preprocessing bug — trained on 304 unintended classes. Expected post-fix accuracy is <strong>70–75%</strong>, consistent with SVM.</span>
       </div>
     </div>
 
-    <!-- REGRESSION TAB -->
     <div class="tab-panel" id="tab-reg">
       <div class="grid-2">
         <div class="card" style="padding:0;overflow:hidden;">
@@ -755,16 +477,14 @@
       </div>
     </div>
 
-    <!-- COEFFICIENTS TAB -->
     <div class="tab-panel" id="tab-coeff">
       <div class="card">
-        <div style="font-size:13px;color:var(--gray-400);margin-bottom:20px;">Standardized coefficients — magnitude shows importance, sign shows direction of effect on <code style="font-family:var(--mono);font-size:12px;background:var(--gray-100);padding:2px 6px;border-radius:4px;">broad_jump_cm</code></div>
+        <div style="font-size:13px;color:var(--gray-400);margin-bottom:20px;">Standardized coefficients — magnitude = importance, sign = direction of effect on <code style="font-family:var(--mono);font-size:12px;background:var(--gray-100);padding:2px 6px;border-radius:4px;">broad_jump_cm</code></div>
         <div id="coeff-list"></div>
       </div>
     </div>
   </section>
 
-  <!-- TECH STACK -->
   <section class="section">
     <div class="section-label">Stack</div>
     <div class="section-title">Technologies Used</div>
@@ -780,7 +500,6 @@
     </div>
   </section>
 
-  <!-- HOW TO RUN -->
   <section class="section">
     <div class="section-label">Setup</div>
     <div class="section-title">How to Run</div>
@@ -799,8 +518,24 @@
     </div>
   </section>
 
-</div><!-- /container -->
+  <section class="section">
+    <div class="section-label">Team</div>
+    <div class="section-title">Contributors</div>
+    <div class="team-grid">
+      <div class="team-card"><div class="team-avatar av1">NK</div><div><div class="team-name">Nada Khaled Mahmoud</div><div class="team-role">Team Leader</div></div></div>
+      <div class="team-card"><div class="team-avatar av2">NE</div><div><div class="team-name">Neama Eid Darwish</div><div class="team-role">Member</div></div></div>
+      <div class="team-card"><div class="team-avatar av3">FY</div><div><div class="team-name">Fatima Youssef Kamal</div><div class="team-role">Member</div></div></div>
+      <div class="team-card"><div class="team-avatar av4">MY</div><div><div class="team-name">Mona Yasser Abdelkader</div><div class="team-role">Member</div></div></div>
+      <div class="team-card"><div class="team-avatar av5">HR</div><div><div class="team-name">Hagar Roshdy Ramadan</div><div class="team-role">Member</div></div></div>
+      <div class="team-card"><div class="team-avatar av6">NA</div><div><div class="team-name">Nourhan Abdelkhaleq</div><div class="team-role">Member</div></div></div>
+    </div>
+  </section>
 
+</div>
+
+<footer class="footer">
+  <p>Built for <strong>Introduction to AI & ML</strong> · Supervised by <strong>Dr. Sherif Morsi</strong> · Educational purposes only</p>
+</footer>
 
 <script>
 function switchTab(e, id) {
@@ -811,16 +546,16 @@ function switchTab(e, id) {
 }
 
 const coeffs = [
-  { feat: 'gender', val: 12.59, dir: 'pos', interp: 'Males jump ~12.5 cm further' },
-  { feat: 'sit_ups_counts', val: 8.75, dir: 'pos', interp: 'More sit-ups → longer jump' },
-  { feat: 'gripForce', val: 7.86, dir: 'pos', interp: 'Stronger grip → more power' },
-  { feat: 'sit_and_bend', val: 4.12, dir: 'pos', interp: 'Better flexibility helps' },
-  { feat: 'height_cm', val: 1.35, dir: 'pos', interp: 'Taller → slightly longer jump' },
-  { feat: 'weight_kg', val: 1.31, dir: 'pos', interp: 'Slight muscle mass effect' },
-  { feat: 'body_fat_percent', val: -7.23, dir: 'neg', interp: 'Higher fat → less power' },
-  { feat: 'age', val: -7.87, dir: 'neg', interp: 'Older → reduced explosive power' },
-  { feat: 'systolic', val: -0.34, dir: 'neg', interp: 'Negligible predictor' },
-  { feat: 'diastolic', val: 0.96, dir: 'pos', interp: 'Negligible predictor' },
+  { feat: 'gender',            val: 12.59, dir: 'pos', interp: 'Males jump ~12.5 cm further' },
+  { feat: 'sit_ups_counts',    val: 8.75,  dir: 'pos', interp: 'More sit-ups → longer jump' },
+  { feat: 'gripForce',         val: 7.86,  dir: 'pos', interp: 'Stronger grip → more power' },
+  { feat: 'sit_and_bend',      val: 4.12,  dir: 'pos', interp: 'Better flexibility helps' },
+  { feat: 'height_cm',         val: 1.35,  dir: 'pos', interp: 'Taller → slightly longer jump' },
+  { feat: 'weight_kg',         val: 1.31,  dir: 'pos', interp: 'Slight muscle mass effect' },
+  { feat: 'body_fat_percent',  val: -7.23, dir: 'neg', interp: 'Higher fat → less power' },
+  { feat: 'age',               val: -7.87, dir: 'neg', interp: 'Older → reduced explosive power' },
+  { feat: 'systolic',          val: -0.34, dir: 'neg', interp: 'Negligible predictor' },
+  { feat: 'diastolic',         val: 0.96,  dir: 'pos', interp: 'Negligible predictor' },
 ];
 
 const maxAbs = Math.max(...coeffs.map(c => Math.abs(c.val)));
